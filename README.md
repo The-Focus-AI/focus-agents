@@ -1,26 +1,51 @@
-# Focus Agents
+# tech-researcher
 
-Claude Code agents for research and engineering analysis.
+A Claude Code plugin for researching topics on the web and generating comprehensive academic-style Markdown reports.
 
-## Agents
+## Features
 
-- **engineering-processes-advisor** - Analyze a codebase and produce comprehensive engineering assessment
-- **tech-research** - Find the optimal library, tool, or technique for a project need
-
-## Installation
-
-Add to your Claude Code settings:
-
-```json
-{
-  "plugins": {
-    "focus-agents": {
-      "source": "github:The-Focus-AI/focus-agents"
-    }
-  }
-}
-```
+- **Thorough Research**: Gathers information from 10+ sources
+- **Interactive Flow**: Asks clarifying questions to refine research scope
+- **Academic Reports**: Generates structured reports with abstract, findings, conclusion, and references
+- **Source Persistence**: Saves research to `./reports/` folder with date-prefixed filenames
+- **Proactive Activation**: Triggers automatically on research-related requests
 
 ## Usage
 
-These agents are automatically available when the plugin is enabled. They can be triggered by Claude Code when appropriate for your task.
+### Command
+
+```
+/research <topic>
+```
+
+Starts an interactive research session. The plugin will:
+1. Ask clarifying questions about scope and focus
+2. Search the web for relevant sources
+3. Gather and synthesize information
+4. Generate an academic-style Markdown report
+5. Save to `./reports/YYYY-MM-DD-topic-name.md`
+
+### Natural Language
+
+The web-researcher agent also triggers on natural requests like:
+- "Research the latest trends in AI"
+- "Find information about quantum computing"
+- "What's the current state of renewable energy?"
+
+## Output Format
+
+Reports follow an academic structure:
+
+1. **Abstract** - Brief summary of findings
+2. **Introduction** - Context and research scope
+3. **Findings** - Organized by theme/topic
+4. **Conclusion** - Key takeaways
+5. **References** - All sources with links
+
+## Installation
+
+```bash
+claude --plugin-dir /path/to/tech-researcher
+```
+
+Or copy to your project's `.claude-plugin/` directory.

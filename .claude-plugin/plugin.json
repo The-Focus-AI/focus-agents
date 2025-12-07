@@ -1,9 +1,10 @@
 {
-  "name": "focus-agents",
+  "name": "tech-researcher",
   "version": "1.0.0",
-  "description": "Research and engineering analysis agents",
+  "description": "Research topics on the web and generate comprehensive academic-style Markdown reports with thorough source gathering",
   "author": {
-    "name": "The Focus AI"
+    "name": "Community",
+    "email": ""
   },
-  "agents": "./agents"
+  "keywords": ["research", "web-search", "reports", "documentation", "sources"]
 }
