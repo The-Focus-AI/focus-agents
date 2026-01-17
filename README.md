@@ -44,8 +44,22 @@ Reports follow an academic structure:
 
 ## Installation
 
+### Via Focus Marketplace (Recommended)
+
 ```bash
-claude --plugin-dir /path/to/tech-researcher
+# Add the Focus marketplace (if not already added)
+/plugin marketplace add The-Focus-AI/claude-marketplace
+
+# Install the plugin
+/plugin install focus-agents@focus-marketplace
+```
+
+Then restart Claude Code.
+
+### Manual Installation
+
+```bash
+claude --plugin-dir /path/to/focus-agents
 ```
 
 Or copy to your project's `.claude-plugin/` directory.
