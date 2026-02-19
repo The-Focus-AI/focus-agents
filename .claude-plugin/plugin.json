@@ -1,10 +1,11 @@
 {
   "name": "tech-researcher",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Research topics on the web and generate comprehensive academic-style Markdown reports with thorough source gathering",
   "author": {
     "name": "Community",
     "email": ""
   },
-  "keywords": ["research", "web-search", "reports", "documentation", "sources"]
+  "keywords": ["research", "web-search", "reports", "documentation", "sources"],
+  "skills": ["./skills/research-methodology"]
 }
