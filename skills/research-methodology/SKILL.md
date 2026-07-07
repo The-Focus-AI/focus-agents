@@ -1,5 +1,5 @@
 ---
-name: Research Methodology
+name: research-methodology
 description: This skill should be used when the user asks about "how to research", "research best practices", "evaluate sources", "source credibility", "academic research", "find reliable information", "cite sources", "research methodology", or needs guidance on conducting thorough web research and evaluating information quality.
 version: 1.0.0
 ---
